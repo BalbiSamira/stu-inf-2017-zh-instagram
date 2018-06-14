@@ -3,13 +3,7 @@ package ch.bbcag.badiapp.model;
 public class Becken {
 
     private String name;
-    private double temperature;
-
-
-    @Override
-    public String toString() {
-        return getName() + ":  " + getTemperature() + "°C";
-    }
+    private Double temperature;
 
     public String getName() {
         return name;
@@ -19,11 +13,16 @@ public class Becken {
         this.name = name;
     }
 
-    public double getTemperature() {
-        return temperature;
-    }
-
-    public void setTemperature(double temperature) {
+    public void setTemperature(Double temperature) {
         this.temperature = temperature;
     }
+
+    public String toString() {
+        // TODO Replace C° with value from SharedPreferences and if it sould be °F calculate it.
+        if (temperature == null) {
+            return String.format("%s: -", name);
+        }
+        return String.format("%s: %s °C", name, temperature);
+    }
+
 }

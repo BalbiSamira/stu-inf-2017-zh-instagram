@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">BadiApp</string>
+    <string name="main_title">Overview</string>
+    <string name="main_alertDialogLoadingFavorites">Could not load favorite Badis. Please try later.</string>
+    <string name="badiDetails_alertDialogLoadingBadis">Could not load details. Please try later.</string>
+    <string name="all_ok">Ok</string>
+    <string name="all_error">Error</string>
+    <string name="all_favorites">Favorites</string>
+    <string name="badiFavorites_title">Available Badis</string>
+    <string name="main_select_badi">Select at least one Badi.</string>
+    <string name="badifavorites_alertDialogLoadingBadis">Could not load list of available Badis. Please try later.</string>
+
 </resources>

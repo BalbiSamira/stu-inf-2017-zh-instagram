@@ -1,20 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context="ch.bbcag.badiapp.MainActivity"
+    android:orientation="vertical"
+
+    >
+
+    <ProgressBar
+        android:id="@+id/loading_main_progress"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/nobadisfound_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/main_select_badi"
+        android:textSize="24sp"
+        android:visibility="visible" />
 
     <ImageView
-        android:id="@+id/badilogo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@drawable/pool" />
+        android:id="@+id/badilogo"
+        android:src="@drawable/pool"
+        android:adjustViewBounds="true"/>
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/badiliste">
-    </ListView>
+        android:id="@+id/badiliste"
+
+
+        ></ListView>
 </LinearLayout>
